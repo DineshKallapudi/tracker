@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Arogya Suraksha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Project Arogya Suraksha</h1>
+</header>
+
+<div id="content">
+    <div id="nutrition-info">
+        <h3>Selected Food's Nutrition</h3>
+        <div class="nutrition-detail"><strong>Name:</strong> <span id="item-name">None</span></div>
+        <div class="nutrition-detail"><strong>Calories:</strong> <span id="item-calories">0</span> kcal</div>
+        <div class="nutrition-detail"><strong>Protein:</strong> <span id="item-protein">0</span> g</div>
+        <div class="nutrition-detail"><strong>Carbs:</strong> <span id="item-carbs">0</span> g</div>
+        <div class="nutrition-detail"><strong>Fat:</strong> <span id="item-fat">0</span> g</div>
+        <div class="nutrition-detail"><strong>Fiber:</strong> <span id="item-fiber">0</span> g</div>
+        <input type="number" id="quantity" value="1" min="1">
+        <button id="add-to-goal">Add to Goal</button>
+    </div>
+
+    <div id="dish-list" class="dish-list">
+        <!-- Food items will be dynamically added here -->
+    </div>
+
+    <div id="calorie-count">
+        Calories Consumed: <span id="total-calories">0</span> kcal
+    </div>
+
+    <div id="calories-bar">
+        <div></div> <!-- Progress bar inner div -->
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

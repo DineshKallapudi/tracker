@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #006400;
+  color: white;
+  padding: 1.5em;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 3px solid #32CD32;
+  position: relative;
+}
+
+#content {
+  padding: 2em;
+  text-align: center;
+}
+
+.dish-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dish-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dish-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#nutrition-info {
+  display: none;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.nutrition-detail {
+  margin-bottom: 10px;
+}
+
+#calorie-count {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #006400;
+  margin-top: 20px;
+}
+
+#calories-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#calories-bar > div {
+  height: 100%;
+  background-color: #32CD32;
+  width: 0%;
+  transition: width 0.3s ease;
+}
